@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Checker | Quality Air For You</title>
+    <link rel="icon" type="image/x-icon" href="/title-img.png">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="nav-head">
+            <img src="images/logo.png" alt="logo">
+            <h1>Air Checker</h1>
+        </div>
+        <div class="navlinks">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#">Air Quality</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="home">
+        <div id="home-head">
+            <h1>Determine Your</h1>
+            <h1>Safety Today</h1>
+        </div>
+        <div id="home-body">
+            Want to know about your Air Health?
+        </div>
+        <div id="home-footer">
+            <a href="#">Check Now</a>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div id="about-us-body">
+            <h2>
+                About Us
+            </h2>
+            <hr>
+            <p>
+                Air pollution refers to the release of pollutants into the air-pollutants which are detrimental to human
+                health
+                and the planet as a whole. According to the World Health Organization (WHO), every year air pollution is
+                responsible for nearly seven million deaths around the globe. Nine out of ten human beings currently
+                breathe air
+                that exceeds the WHO'S guideline lmits for pollutants, with those living in low and middle-income
+                countries
+                suffering the most. Our Job is to inform all of our clients regarding the harmful effects of air
+                pollution and
+                the precautions that can be taken depending on the amount of air pollution in each area.
+            </p>
+        </div>
+        <div id="about-us-img">
+            <img src="images/about-us-icon.png" alt="About Us">
+        </div>
+    </section>
+    <section id="features">
+        <div class="sub-features">
+            <img src="/images/location.png" alt="">
+            <h3>Get Pollution Data using Geolocation</h3>
+            <p>Keep updated information regarding the air pollution at all times at any location using geolocation API.
+            </p>
+        </div>
+        <div class="sub-features">
+            <img src="/images/security.png" alt="">
+            <h3>Keep track of your safety</h3>
+            <p>Constantly get notifications regarding your safety in terms of air pollution. Helps ensure you are taking
+                precautions.</p>
+        </div>
+        <div class="sub-features">
+            <img src="/images/heart.png" alt="">
+            <h3>Monitor your health in the outside world</h3>
+            <p>Your health gets monitored by this application through recieving your medical data and the environment
+                data.</p>
+        </div>
+    </section>
+
+    <section id="check-aqi">
+        <div class="check-api-head">
+            <h1>Check Today's Air Quality!</h1>
+            <div class="sub-form">
+                <button id="myBtn">Check Now</button>
+            </div>
+        </div>
+
+        <div id="content">
+        </div>
+        <div class="container my-2" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <button type="button" class="btn" id="change-profile-btn" data-bs-toggle="modal"
+                data-bs-target="#myModal">Check Your Health</button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Check Your Health</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" id="heart-rate"  class= "my-2" placeholder="Enter Your Heart Rate">
+                            <input type="text" id="oxygen-rate"  class= "my-2" placeholder="Enter Your SP o2 level">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Pregnancy
+                                </label>
+                              </div>
+                            <br>
+                            <div class="modal-footer">
+                                <button class="btn"
+                                    style="font-size: 1.2rem; border: 1px solid rgb(8, 143, 143); background-color: rgb(8, 143, 143); color: white;"
+                                    name="update-profile-picture" id="modal-btn">Upload</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="Copy">
+        <div class="center">
+            Copyright &copy; www.AirChecker.com All rights reserved!
+        </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+<script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+    })
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</html>

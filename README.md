@@ -19,7 +19,7 @@ The Air Quality Information Web App is a simple web application that fetches rea
 - Manipulating DOM elements and updating content dynamically based on data.
 - Implementing color-coded visualizations for better user understanding.
 - Incorporating additional functionality like modal alerts for user interaction.
-- 
+
 ## Technologies Used
 
 - **JavaScript**: Core programming language used for logic and interaction.
